@@ -29,11 +29,9 @@ body {
   }
   
   /* Caixas - Retangulares e minimalistas */
-  .container, header, .section, footer {
+  .container, .section, footer {
     background-color: #000000;
-    border: 2px solid #808080; /* Borda cinza para um visual vintage */
-    padding: 20px;
-    margin: 10px auto; 
+    border: 2px solid #808080; /* Borda cinza para um visual vintage */ 
     max-width: 700px; 
   }
   

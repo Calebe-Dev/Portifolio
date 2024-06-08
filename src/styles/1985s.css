@@ -36,7 +36,7 @@ body {
   }
   
   /* Caixas com bordas e estilo retrô */
-  .container, header, .section, footer {
+  .container, .section, footer {
     background-color: #000000;
     border: 2px solid #404040; /* Cinza escuro para um visual vintage */
     padding: 20px;

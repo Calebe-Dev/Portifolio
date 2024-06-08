@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cssFile = './src/styles/1985s.css';
                 break;
             case '1980s':
-                cssFile = './src/styles/2000s.css';
+                cssFile = './src/styles/1980s.css';
                 break;
             case '1975s':
                 cssFile = './src/styles/1975s.css';

@@ -30,7 +30,7 @@ body {
   }
   
   /* Caixas com um toque minimalista */
-  .container, header, .section, footer {
+  .container, .section, footer {
     background-color: #000000; 
     border: 2px solid #40FF00; /* Borda verde vibrante */
     padding: 20px;
