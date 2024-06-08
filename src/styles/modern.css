@@ -1,0 +1,62 @@
+/* Estilos Gerais - Compartilhados por todas as eras */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* ... (Outros estilos gerais) ... */
+  
+  /* Era Moderna (Modern) */
+  body.modern { 
+    background-color: #111; 
+    color: #fff;
+    /* ... outros estilos modernos ... */
+  }
+  
+  /* Década de 2010 (2010s) - Estilo Flat Design */
+  body.2010s { 
+    background-color: #f2f2f2; 
+    color: #333; 
+    font-family: 'Roboto', sans-serif;
+    /* ... outros estilos da década de 2010 ... */
+  }
+  
+  /* Década de 2000 (2000s) - Estilo Web 2.0 */
+  body.2000s {
+    background: linear-gradient(#e6e6e6, #fff); 
+    color: #000; 
+    font-family: 'Arial', sans-serif; 
+    /* ... outros estilos da década de 2000 ... */ 
+  }
+  
+  /* Década de 1990 (1990s) - Estilo Web 1.0 */
+  body.1990s {
+    background-color: #f0f0f0; 
+    color: #000080;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    /* ... outros estilos da década de 1990 ... */
+  }
+  
+  
+  /* Estilos do Seletor de Era */
+  .era-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100; 
+  }
+  
+  .era-selector label {
+    color: white; 
+    margin-right: 5px;
+  }
+  
+  .era-selector select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222; 
+    color: white;
+  }

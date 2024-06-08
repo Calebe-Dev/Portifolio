@@ -1,0 +1,58 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #fcfcfc;
+    color: #000;
+    overflow-x: hidden;
+}
+
+.rounded-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #666;
+    border-radius: 20px;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rounded-button:hover {
+    background-color: #ff9900;
+    color: #fff;
+}
+
+/* Estilo para o seletor de eras */
+#era {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px 20px;
+    border: 2px solid #666;
+    border-radius: 20px;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Outros estilos... */
