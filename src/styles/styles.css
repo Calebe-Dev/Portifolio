@@ -450,6 +450,10 @@ footer {
 
 /* Media Queries para Responsividade */
 @media screen and (max-width: 768px) {
+    header{
+        position:relative
+    }
+    
     nav {
         flex-direction: row;
         flex-wrap: wrap;
