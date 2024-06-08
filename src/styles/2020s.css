@@ -1,0 +1,146 @@
+/* 2020s.css - Minimalismo moderno com toques de ousadia */
+
+/* Fontes limpas e versáteis */
+body {
+    font-family: 'Inter', 'Poppins', 'Segoe UI', sans-serif;
+    background-color: #ffffff; /* Branco como tela em branco, prontinha para a criatividade! */
+    color: #222; 
+    text-align: left;
+    line-height: 1.7; /* Espaçamento entre linhas para melhor leitura */
+    -webkit-font-smoothing: antialiased; /* Deixa as fontes mais nítidas */
+  }
+  
+  /* Links - Sutis, mas cheios de estilo */
+  a {
+    color: #6466FF; /* Um toque de roxo vibrante */
+    text-decoration: none;
+    transition: all 0.2s ease-in-out; /* Transições suaves são essenciais! */
+  }
+  
+  a:hover {
+    color: #4B4CE0; /* Um roxo mais intenso no hover */
+    text-decoration: underline; 
+  }
+  
+  /* Botões - Minimalistas e chamativos */
+  .btn {
+    background-color: #FF5733; /* Laranja vibrante para destacar os botões */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px; /* Cantos arredondados mais suaves */
+    cursor: pointer;
+    font-weight: 600; /* Um pouco mais de peso na fonte */
+    transition: all 0.2s ease-in-out; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave e moderna */
+  }
+  
+  .btn:hover {
+    transform: translateY(-2px); /* Efeito de elevação no hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
+  }
+  
+  /* Caixas e elementos - Limpos, organizados e com microinterações */
+  .container, header, .section, footer {
+    background: white;
+    padding: 40px; /* Mais espaço para respirar */
+    margin-bottom: 40px; /* Mais espaço entre as seções */
+    border-radius: 12px; /* Cantos arredondados mais pronunciados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); 
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .container:hover, header:hover, .section:hover, footer:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Títulos - Hierárquicos e com muito espaço */
+  h1, h2, h3 {
+    font-weight: 700; 
+    margin-bottom: 20px; /* Mais espaço abaixo dos títulos */
+    line-height: 1.2; /* Um pouco menos de espaçamento entre linhas em títulos */
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
+  h2 {
+    font-size: 2.2em;
+  }
+  
+  h3 {
+    font-size: 1.6em;
+  }
+  
+  /* Imagens - Elegantes e responsivas */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  img:hover {
+    transform: scale(1.05); 
+  }
+  
+  /* Listas - Organizadas e modernas */
+  ul {
+    list-style: disc outside;
+    margin-left: 40px;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px; 
+  }
+  
+  /* Tabelas - Minimalistas e com linhas espaçadas */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px; 
+  }
+  
+  th, td {
+    border: 1px solid #eee; 
+    padding: 16px; 
+    text-align: left; 
+  }
+  
+  th {
+    background-color: #f8f8f8; 
+    font-weight: 600;
+  }
+  
+  /* Formulários - Inputs e Textarea com estilo clean e moderno */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 14px; 
+    margin: 10px 0; 
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: none; 
+    border-color: #6466FF; 
+  }
+  
+  /* Rodapé - Minimalista e elegante */
+  footer {
+    background-color: #f8f8f8; 
+    color: #555; 
+    text-align: center; 
+    padding: 30px 0;
+  }

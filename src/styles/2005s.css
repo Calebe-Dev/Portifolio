@@ -1,0 +1,100 @@
+/* 2005s.css (versão revisada) */
+
+/* MySpace vibes - agora com mais cores! */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFFCC; /* Amarelo claro, bem comum na época */
+    color: #333333; /* Cinza escuro para contraste */
+    text-align: center;  /* Centralizar ainda era popular */
+}
+
+/* Links que chamam atenção */
+a {
+    color: #FF00FF; /* Rosa choque! */
+    text-decoration: none; 
+    font-weight: bold;
+    border-bottom: 1px dotted #FF00FF; 
+}
+
+a:hover {
+    color: #0000FF; /* Azul vibrante no hover */
+}
+
+/* Botões com aquela carinha de "Web 2.0" */
+.btn {
+    background: linear-gradient(to bottom, #FFCC00, #FF9900); /* Gradiente! */
+    color: #FFFFFF;
+    border: 1px solid #FF6600; 
+    padding: 8px 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.btn:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Caixas com contornos, sombras e cantos arredondados */
+.container, header, .section, footer {
+    background-color: #FFFFFF; 
+    border: 1px solid #CCCCCC; 
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px; 
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Títulos com um toque de "WordArt" */
+h1, h2, h3 {
+    font-family: 'Comic Sans MS', cursive, 'Arial Black', sans-serif; 
+    color: #333399; /* Azul escuro, um clássico */
+    text-shadow: 1px 1px 2px #FFFFFF; 
+}
+
+/* Imagens com bordas arredondadas */
+img {
+    border: 2px solid #666699;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Listas não ordenadas com marcadores personalizados */
+ul {
+    list-style-image: url('caminho/para/sua/imagem/de/marcador.gif'); /* Use uma imagem pequena! */
+    margin-left: 40px; 
+}
+
+/* Tabelas com bordas e linhas zebradas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #CCCCCC; 
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #EEEEEE; 
+    color: #333399;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFE0; 
+}
+
+/* Formulários com estilo "Web 2.0" */
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #FFFFE0;  
+    color: #333399; 
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+    border-radius: 5px;
+}

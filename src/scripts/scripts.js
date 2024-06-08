@@ -13,12 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'modern':
                 cssFile = './src/styles/modern.css';
                 break;
+            case '2020s':
+                cssFile = './src/styles/2020s.css';
+                break;
             case '2015s':
                 cssFile = './src/styles/2015s.css';
                 break;        
             case '2010s':
                 cssFile = './src/styles/2010s.css';
                 break;
+            case '2005Dark':
+                    cssFile = './src/styles/2005sDark.css';
+                    break; 
             case '2005s':
                 cssFile = './src/styles/2005s.css';
                 break;    
@@ -41,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 cssFile = './src/styles/1975s.css';
                 break;
             case '1970s':
-                cssFile = './src/styles/2000s.css';
+                cssFile = './src/styles/1970s.css';
                 break;          
             default:
                 cssFile = './src/styles/modern.css';

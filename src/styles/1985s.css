@@ -1,0 +1,111 @@
+/* 1985s.css - Nostalgia Digital Total! */
+
+/* Simulando a tela de um monitor antigo */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Fontes clássicas da era digital */
+    background-color: #000000; /* Tela preta, é claro! */
+    color: #17F011; /* Verde neon vibrante, um clássico! */
+    text-align: center; /* Centralizar era a norma */
+    line-height: 1.5; /* Para aquele visual autêntico */
+    cursor: default; /* Sem cursor personalizado, era tudo mais simples */
+  }
+  
+  /* Links que parecem comandos */
+  a {
+    color: #FFD700; /* Amarelo dourado para um contraste eletrizante */
+    text-decoration: none;
+    border-bottom: 1px solid #FFD700; /* Simulando o sublinhado */
+    cursor: pointer; /* Para indicar que é clicável */
+  }
+  
+  a:hover {
+    color: #FFFF00; /* Efeito hover com um amarelo mais intenso */
+  }
+  
+  /* Botões que parecem teclas */
+  .btn {
+    background-color: #000080; /* Azul escuro, como os clássicos sistemas */
+    color: #FFFFFF; 
+    border: 2px solid #FFFFFF;
+    padding: 6px 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0; /* Sem cantos arredondados, era tudo retinho! */
+    box-shadow: none; /* Sem sombras modernas! */
+  }
+  
+  /* Caixas com bordas e estilo retrô */
+  .container, header, .section, footer {
+    background-color: #000000;
+    border: 2px solid #404040; /* Cinza escuro para um visual vintage */
+    padding: 20px;
+    margin: 10px auto; /* Centralizando com margens automáticas */
+    max-width: 800px; /* Limitando a largura para um visual autêntico */
+  }
+  
+  /* Títulos que se destacam na tela escura */
+  h1, h2, h3 {
+    font-weight: normal; 
+    text-transform: uppercase; /* Letras maiúsculas, como nos velhos tempos */
+    margin-bottom: 10px; 
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 5px #17F011; /* Efeito neon no título principal */
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #FFD700; /* Amarelo para os subtítulos */
+  }
+  
+  /* Imagens com estilo de monitor antigo */
+  img {
+    display: block; 
+    margin: 20px auto; 
+    border: 3px solid #FFFFFF; /* Borda branca para destacar da tela */
+    filter: grayscale(10%); /* Um toque de "desbotado" para a nostalgia */
+  }
+  
+  /* Listas com marcadores simples */
+  ul {
+    list-style-type: disc;
+    text-align: left; 
+    margin-left: 40px;
+  }
+  
+  li {
+    margin-bottom: 5px; 
+  }
+  
+  /* Tabelas com estilo de terminal antigo */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  
+  th, td {
+    border: 1px solid #17F011; 
+    padding: 8px;
+    text-align: left; 
+  }
+  
+  /* Formulários - Estilo vintage total! */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background-color: #000000; 
+    color: #17F011; 
+    border: 1px solid #17F011; 
+    padding: 6px;
+    margin-bottom: 10px;
+  }
+  
+  /* Rodapé - Simples e direto */
+  footer {
+    text-align: center; 
+    padding: 10px 0; 
+  }

@@ -1,0 +1,115 @@
+/* 2005s.css */
+
+/* MySpace vibes */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Preto era a regra! */
+    color: #FFFFFF;
+    text-align: left; /* Alinhamento à esquerda era comum */
+}
+
+/* Links que chamam atenção */
+a {
+    color: #FF00FF; /* Rosa choque! */
+    text-decoration: none; 
+    font-weight: bold;
+    border-bottom: 1px dotted #FF00FF; /* Linha pontilhada embaixo */
+}
+
+a:hover {
+    color: #FFFF00; /* Efeito hover que pisca! */
+}
+
+/* Botões com cara de "clique aqui!" */
+.btn {
+    background-color: transparent; 
+    color: #FFFFFF;
+    border: 2px solid #FF6600; /* Laranja vibrante */
+    padding: 5px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px; /* Cantos levemente arredondados */
+    position: relative; /* Para o efeito de texto */
+}
+
+.btn::before { /* Efeito de texto sobreposto */
+    content: attr(data-text); /* Pega o texto do atributo data-text */
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FF6600;
+    z-index: -1; /* Coloca o texto por trás do botão */
+}
+
+/* Caixas com bordas, sombras e gradientes */
+.container, header, .section, footer {
+    background-color: #111111; /* Cinza bem escuro */
+    border: 1px solid #333333; 
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); /* Sombra suave */
+}
+
+/* Títulos com estilo "emo" */
+h1, h2, h3 {
+    font-family: 'Impact', 'Arial Black', sans-serif; /* Fontes impactantes */
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px #000000; 
+}
+
+/* Imagens com bordas arredondadas */
+img {
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+/* Listas não ordenadas com marcadores personalizados */
+ul {
+    list-style-image: url('caminho/para/sua/imagem/de/marcador.gif'); /* Use uma imagem pequena! */
+    margin-left: 30px;
+}
+
+/* Tabelas com bordas e cores alternadas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #666666;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+    background-color: #222222; 
+}
+
+/* Formulários com estilo "Web 2.0" */
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 1px solid #666666;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Efeito de texto brilhante */
+.glow-text {
+    color: #FF00FF; /* Rosa choque! */
+    text-shadow: 0 0 5px #FF00FF; /* Use a mesma cor para o brilho */
+}
+
+
+
+

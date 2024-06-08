@@ -1,0 +1,105 @@
+/* 1970s.css - Saudações do Mainframe! */
+
+body {
+    font-family: 'Courier New', Courier, monospace; /* Fonte clássica de terminal */
+    background-color: #000000; /* Tela preta, a marca registrada da época */
+    color: #C2D53C;  /* Verde âmbar, um clássico dos monitores antigos */
+    text-align: left; /* Alinhamento à esquerda, como nos terminais */
+    line-height: 1.4;
+    cursor: default; /* Sem cursores personalizados */
+  }
+  
+  /* Links - Simulando comandos */
+  a {
+    color: #F2F22C; /* Amarelo claro para os links */
+    text-decoration: none;
+    border-bottom: 1px dashed #F2F22C;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    color: #FFFFFF; /* Destacando em branco no hover */
+  }
+  
+  /* Botões? Só na base do texto clicável! */
+  .btn {
+    color: #F2F22C; /* Amarelo para o "botão" */
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /* Caixas - Retangulares e minimalistas */
+  .container, header, .section, footer {
+    background-color: #000000;
+    border: 2px solid #808080; /* Borda cinza para um visual vintage */
+    padding: 20px;
+    margin: 10px auto; 
+    max-width: 700px; 
+  }
+  
+  /* Títulos - Estilo "Comando Importante" */
+  h1, h2, h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px; 
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #F2F22C; 
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: #C2D53C; 
+  }
+  
+  /* Imagens? ASCII Art é a pedida! */
+  img {
+    /* Use ASCII art para representar imagens */
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; 
+  }
+  
+  /* Listas com marcadores básicos */
+  ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 40px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  /* Tabelas - Estilo "Planilha de Dados" */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  
+  th, td {
+    border: 1px solid #808080; 
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Formulários - Estilo terminal puro! */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background-color: #000000;
+    color: #C2D53C;
+    border: 1px solid #C2D53C;
+    padding: 4px;
+    margin-bottom: 8px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Rodapé - Simples e objetivo */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+  }

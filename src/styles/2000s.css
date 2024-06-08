@@ -1,58 +1,115 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* 2000s.css */
 
+/* Paleta de cores vibrantes e brilhantes */
 body {
-    font-family: 'Verdana', sans-serif;
-    background-color: #fcfcfc;
-    color: #000;
-    overflow-x: hidden;
+    font-family: 'Trebuchet MS', 'Arial', sans-serif; /* Fontes clássicas */
+    background-color: #FFFFCC; /* Amarelo claro, bem "Windows XP" 😄 */
+    color: #333399; /* Azul escuro para contraste */
+    text-align: center; 
 }
 
-.rounded-button {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #666;
-    border-radius: 20px;
-    background-color: #ffcc00;
-    color: #333;
-    font-size: 16px;
-    text-align: center;
+/* Links com sublinhado e efeito hover chamativo */
+a {
+    color: #FF6600; /* Laranja vibrante */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:hover {
     text-decoration: none;
-    cursor: pointer;
-}
-
-.rounded-button:hover {
-    background-color: #ff9900;
+    background-color: #FF9933; /* Efeito hover que grita "2000s"! */
     color: #fff;
 }
 
-/* Estilo para o seletor de eras */
-#era {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    padding: 10px 20px;
-    border: 2px solid #666;
-    border-radius: 20px;
-    background-color: #ffcc00;
-    color: #333;
-    font-size: 16px;
+/* Botões com cara de "Web 2.0" */
+.btn {
+    background: linear-gradient(to bottom, #FFCC00, #FF9900); /* Gradiente! */
+    color: #FFFFFF;
+    border: 1px solid #996600;
+    padding: 8px 16px;
+    font-weight: bold;
+    text-transform: uppercase;
     cursor: pointer;
+    border-radius: 5px; /* Cantos arredondados para um toque moderno */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombras! */
 }
 
-/* Cabeçalho */
-header {
-    background-color: #333;
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    top: 0;
+.btn:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra mais intensa no hover */
+}
+
+/* Caixas com bordas arredondadas e sombras */
+.container, header, .section, footer {
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Cantos arredondados everywhere! */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos com cara de "WordArt" */
+h1, h2, h3 {
+    font-family: 'Comic Sans MS', cursive; /* Abrace o Comic Sans! (ou não 😅) */
+    color: #333399;
+    text-shadow: 1px 1px 2px #FFFFFF; /* Sombra suave no texto */
+}
+
+/* Imagens com bordas arredondadas */
+img {
+    border: 3px double #666699;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+/* Listas não ordenadas com marcadores circulares */
+ul {
+    list-style-type: disc;
+    margin-left: 40px; /* Indentação clássica */
+}
+
+/* Tabelas com bordas e linhas zebradas */
+table {
+    border-collapse: collapse;
     width: 100%;
-    z-index: 10;
 }
 
-/* Outros estilos... */
+th, td {
+    border: 1px solid #CCCCCC;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #EEEEEE; /* Fundo cinza claro para o cabeçalho */
+    color: #333399;
+}
+
+tr:nth-child(even) {
+    background-color: #FFFFE0; /* Linhas zebradas */
+}
+
+/* Formulários com estilo "Web 2.0" */
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #FFFFE0; 
+    color: #333399;
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Detalhes adicionais */
+
+/* Para um toque extra de nostalgia, adicione o ícone de "favoritos" ao lado dos links do seu menu */
+nav a::before {
+  content: "⭐️ "; 
+}
+
+/* E que tal uns GIFs animados sutis? Use com moderação para não sobrecarregar a página */
+.about-image { /* Adicione esta classe ao contêiner da imagem na seção "Sobre Mim" */
+  background-image: url('caminho/para/seu/gif/animado.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}

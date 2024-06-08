@@ -1,0 +1,131 @@
+/* 2015s.css - Estilo Clean e Minimalista */
+
+/* Escolhas de fontes modernas e limpas */
+body {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica', sans-serif;
+    background-color: #f5f5f5; /* Cinza clarinho, super elegante */
+    color: #333;
+    text-align: left; /* Alinhamento padrão à esquerda */
+    line-height: 1.6; /* Facilita a leitura */
+  }
+  
+  /* Links - Discretos e eficazes */
+  a {
+    color: #007bff; /* Azul clássico para links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Animação suave na cor */
+  }
+  
+  a:hover {
+    color: #0056b3; /* Um azul mais escuro no hover */
+  }
+  
+  /* Botões - Simples e convidativos */
+  .btn {
+    background-color: #2196F3; /* Azul vibrante para botões */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase; 
+    transition: background-color 0.3s ease; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn:hover {
+    background-color: #1976D2; 
+  }
+  
+  /* Caixas - Limpas e com sombra suave */
+  .container, header, .section, footer {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Títulos - Elegantes e com hierarquia visual */
+  h1, h2, h3 {
+    font-weight: 600;
+    margin-bottom: 15px; 
+  }
+  
+  h1 {
+    font-size: 2.5em; 
+  }
+  
+  h2 {
+    font-size: 2em; 
+  }
+  
+  h3 {
+    font-size: 1.5em; 
+  }
+  
+  /* Imagens - Responsivas e com sombra sutil */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Impede o espaço em branco abaixo da imagem */
+    margin: 20px auto; /* Centraliza a imagem */
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+  }
+  
+  img:hover {
+    transform: scale(1.03); 
+  }
+  
+  /* Listas - Organizadas e discretas */
+  ul {
+    list-style: disc outside; 
+    margin-left: 30px; 
+    padding: 0; 
+  }
+  
+  li {
+    margin-bottom: 8px; 
+  }
+  
+  /* Tabelas - Limpas e com formatação básica */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 12px; 
+    text-align: left; 
+  }
+  
+  th {
+    background-color: #f5f5f5; 
+    font-weight: 600;
+  }
+  
+  /* Formulários - Inputs e Textarea com estilo moderno */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%; 
+    padding: 12px;
+    margin: 8px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+  }
+  
+  /* Rodapé - Minimalista e informativo */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center; 
+    padding: 20px 0; 
+  }

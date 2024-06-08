@@ -1,0 +1,106 @@
+/* 1975s.css - A Pré-História da Web! */
+
+body {
+  font-family: 'VT323', monospace; /* Fonte que simula um terminal antigo */
+  background-color: #000000; /* O clássico fundo preto */
+  color: #40FF00; /* Verde fósforo, a cor da era digital primordial! */
+  text-align: center; 
+  line-height: 1.3;
+  cursor: default;
+}
+
+/* Links - Simulando comandos de terminal */
+a {
+  color: #00FFFF; /* Azul ciano para um contraste vibrante */
+  text-decoration: none;
+  border-bottom: 1px dashed #00FFFF; /* Sublinhado tracejado */
+  cursor: pointer;
+}
+
+a:hover {
+  color: #FFFFFF; /* Branco no hover para destacar */
+}
+
+/* Botões? Que botões? Era tudo texto clicável! */
+.btn {
+  /* Não vamos usar botões visuais, apenas texto com estilo de link */
+  color: #00FFFF; 
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Caixas com um toque minimalista */
+.container, header, .section, footer {
+  background-color: #000000; 
+  border: 2px solid #40FF00; /* Borda verde vibrante */
+  padding: 20px;
+  margin: 10px auto; 
+  max-width: 700px; 
+}
+
+/* Títulos - Estilo "Teletexto" */
+h1, h2, h3 {
+  font-weight: normal;
+  text-transform: uppercase; 
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2em; 
+  text-shadow: 0 0 4px #40FF00; 
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #FFFF00; 
+}
+
+/* Imagens? Só se forem ASCII Art! */
+img {
+  /* Incentive o uso de ASCII art em vez de imagens tradicionais */
+  display: block;
+  margin: 20px auto; 
+  max-width: 100%; 
+}
+
+/* Listas com marcadores simples */
+ul {
+  list-style-type: disc; 
+  text-align: left;
+  margin-left: 40px; 
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Tabelas - Estilo terminal */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto; 
+}
+
+th, td {
+  border: 1px solid #40FF00; 
+  padding: 6px;
+  text-align: left;
+}
+
+/* Formulários - Voltando ao básico */
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: #000000; 
+  color: #40FF00; 
+  border: 1px solid #40FF00; 
+  padding: 4px;
+  margin-bottom: 8px;
+  font-family: 'VT323', monospace; /* Mantendo a fonte do terminal */
+}
+
+/* Rodapé - Simples e direto */
+footer {
+  text-align: center;
+  padding: 10px 0; 
+}

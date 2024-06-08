@@ -1,0 +1,88 @@
+/* 1995s.css */
+
+/* Cores características da época */
+body {
+    font-family: 'Courier New', monospace; /* Fontes comuns */
+    background-color: #008080; /* Teal - cor clássica! */
+    color: #FFFF00; /* Amarelo vibrante para contraste */
+    text-align: center; /* Centralizar era a moda */
+}
+
+/* Links com sublinhado e cor azul */
+a {
+    color: #0000FF;
+    text-decoration: underline;
+    font-weight: bold; /* Destacar os links */
+}
+
+a:hover {
+  color: #ADD8E6; /* Efeito hover simples */
+}
+
+/* Botões com cara de "clique aqui!" */
+.btn {
+    background-color: #FFCC00; /* Amarelo pastel */
+    color: #000080; /* Azul escuro para contraste */
+    border: 2px solid #000080;
+    padding: 8px 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #FFFFE0; /* Efeito hover suave */
+}
+
+/* Caixas com bordas e fundo cinza */
+.container, header, .section, footer {
+    background-color: #D3D3D3; /* Cinza claro */
+    border: 2px solid #000000; /* Borda preta */
+    padding: 20px;
+    margin-bottom: 10px; /* Espaçamento entre as seções */
+}
+
+/* Títulos com destaque */
+h1, h2, h3 {
+    font-family: 'Times New Roman', serif; /* Fonte serifada */
+    color: #000080; /* Azul escuro */
+    text-decoration: underline;
+}
+
+/* Imagens com bordas */
+img {
+    border: 3px double #000000; /* Borda dupla preta */
+    margin: 10px;
+}
+
+/* Listas não ordenadas com marcadores quadrados */
+ul {
+    list-style-type: square;
+}
+
+/* Tabelas com bordas */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #808080; /* Cinza escuro para o cabeçalho */
+    color: #FFFF00; /* Letras amarelas */
+}
+
+/* Formulários com estilo retrô */
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #FFFFE0; /* Amarelo bem clarinho */
+    color: #000080;
+    border: 1px solid #000080;
+    padding: 5px;
+}
