@@ -9,13 +9,13 @@ body {
 }
 
 /* Links com sublinhado e cor azul */
-a {
+mav a {
     color: #0000FF;
     text-decoration: underline;
     font-weight: bold; /* Destacar os links */
 }
 
-a:hover {
+nav a:hover {
   color: #ADD8E6; /* Efeito hover simples */
 }
 

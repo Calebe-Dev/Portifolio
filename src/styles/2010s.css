@@ -8,14 +8,14 @@ body {
   }
   
   /* Links */
-  a {
+  nav a {
     color: #0084B4; 
     text-decoration: none;
     border-bottom: 2px solid transparent; 
     transition: border-color 0.3s ease; 
   }
   
-  a:hover {
+  nav a:hover {
     border-color: #0084B4;
   }
   

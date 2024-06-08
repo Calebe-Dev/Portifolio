@@ -11,13 +11,13 @@ body {
   }
   
   /* Links - Sutis, mas cheios de estilo */
-  a {
+  nav a {
     color: #6466FF; /* Um toque de roxo vibrante */
     text-decoration: none;
     transition: all 0.2s ease-in-out; /* Transições suaves são essenciais! */
   }
   
-  a:hover {
+  nav a:hover {
     color: #4B4CE0; /* Um roxo mais intenso no hover */
     text-decoration: underline; 
   }

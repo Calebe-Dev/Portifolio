@@ -9,13 +9,13 @@ body {
 }
 
 /* Links com sublinhado e efeito hover chamativo */
-a {
+nav a {
     color: #FF6600; /* Laranja vibrante */
     text-decoration: underline;
     font-weight: bold;
 }
 
-a:hover {
+nav a:hover {
     text-decoration: none;
     background-color: #FF9933; /* Efeito hover que grita "2000s"! */
     color: #fff;

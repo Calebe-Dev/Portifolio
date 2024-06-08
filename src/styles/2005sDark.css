@@ -9,14 +9,14 @@ body {
 }
 
 /* Links que chamam atenção */
-a {
+nav a {
     color: #FF00FF; /* Rosa choque! */
     text-decoration: none; 
     font-weight: bold;
     border-bottom: 1px dotted #FF00FF; /* Linha pontilhada embaixo */
 }
 
-a:hover {
+nav a:hover {
     color: #FFFF00; /* Efeito hover que pisca! */
 }
 

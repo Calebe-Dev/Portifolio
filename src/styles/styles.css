@@ -441,11 +441,13 @@ footer {
 
 .about-text {
     opacity: 0;
-    transition: opacity 0.8s ease-in-out;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.about-content:hover .about-text {
+.about-text.animated {
     opacity: 1;
+    transform: translateY(0);
 }
 
 /* Media Queries para Responsividade */

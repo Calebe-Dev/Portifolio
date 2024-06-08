@@ -10,14 +10,14 @@ body {
 }
 
 /* Links - Simulando comandos de terminal */
-a {
+nav a {
   color: #00FFFF; /* Azul ciano para um contraste vibrante */
   text-decoration: none;
   border-bottom: 1px dashed #00FFFF; /* Sublinhado tracejado */
   cursor: pointer;
 }
 
-a:hover {
+nav a:hover {
   color: #FFFFFF; /* Branco no hover para destacar */
 }
 

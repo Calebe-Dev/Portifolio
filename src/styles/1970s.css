@@ -10,14 +10,14 @@ body {
   }
   
   /* Links - Simulando comandos */
-  a {
+  nav a {
     color: #F2F22C; /* Amarelo claro para os links */
     text-decoration: none;
     border-bottom: 1px dashed #F2F22C;
     cursor: pointer;
   }
   
-  a:hover {
+  nav a:hover {
     color: #FFFFFF; /* Destacando em branco no hover */
   }
   

@@ -11,14 +11,14 @@ body {
   }
   
   /* Links que parecem comandos */
-  a {
+  nav a {
     color: #FFD700; /* Amarelo dourado para um contraste eletrizante */
     text-decoration: none;
     border-bottom: 1px solid #FFD700; /* Simulando o sublinhado */
     cursor: pointer; /* Para indicar que é clicável */
   }
   
-  a:hover {
+  nav a:hover {
     color: #FFFF00; /* Efeito hover com um amarelo mais intenso */
   }
   
