@@ -4,6 +4,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const eraSelector = document.getElementById('era');
     const modeToggleButton = document.getElementById('mode-toggle-button');
     const themeLink = document.getElementById('theme-style');
+    const themeColorMeta = document.querySelector('meta[name="theme-color"]'); 
+
+    // Objeto para armazenar as cores de cada era
+    const eraColors = {
+        modern: '#111', 
+        '2020s': '#cor-2020s', 
+        '2015s': '#cor-2015s', 
+        '2010s': '#cor-2010s', 
+        '2005s': '#cor-2005s', 
+        '2005Dark': '#cor-2005sDark',
+        '2000s': '#cor-2000s', 
+        '1995s': '#cor-1995s', 
+        '1990s': '#cor-1990s', 
+        '1985s': '#cor-1985s', 
+        '1980s': '#cor-1980s', 
+        '1975s': '#cor-1975s', 
+        '1970s': '#cor-1970s'  
+    };
+
+     // Função para aplicar a cor do tema
+     function applyThemeColor(color) {
+        themeColorMeta.setAttribute('content', color);
+    }
 
     // Alternar entre diferentes eras
     eraSelector.addEventListener('change', () => {
@@ -53,6 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 cssFile = './src/styles/modern.css';
         }
         themeLink.href = cssFile;
+
+        applyThemeColor(eraColors[selectedEra] || eraColors.modern);
     });
 
 
@@ -124,4 +149,6 @@ document.addEventListener('DOMContentLoaded', () => {
             rect.right <= (window.innerWidth || document.documentElement.clientWidth)
         );
     }
+
+    
 });

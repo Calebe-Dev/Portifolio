@@ -31,9 +31,12 @@ body {
   /* Caixas - Retangulares e minimalistas */
   .container, .section, footer {
     background-color: #000000;
-    border: 2px solid #808080; /* Borda cinza para um visual vintage */ 
-    max-width: 700px; 
-  }
+    border: 2px solid #808080; /* Borda cinza para um visual vintage */
+    max-width: 700px;
+    margin: 0 auto; /* Centralizando com margens automáticas */
+}
+  
+
   
   /* Títulos - Estilo "Comando Importante" */
   h1, h2, h3 {
