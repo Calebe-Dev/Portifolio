@@ -1,0 +1,39 @@
+{
+    "colors": [
+        {
+            "color": "#410611",
+            "enabled": true
+        },
+        {
+            "color": "#392D14",
+            "enabled": true
+        },
+        {
+            "color": "#000506",
+            "enabled": true
+        },
+        {
+            "color": "#0F052B",
+            "enabled": true
+        },
+        {
+            "color": "#333333",
+            "enabled": false
+        }
+    ],
+    "speed": 2,
+    "horizontalPressure": 4,
+    "verticalPressure": 5,
+    "waveFrequencyX": 2,
+    "waveFrequencyY": 3,
+    "waveAmplitude": 5,
+    "shadows": 0,
+    "highlights": 2,
+    "colorBrightness": 1,
+    "colorSaturation": 7,
+    "wireframe": false,
+    "colorBlending": 6,
+    "backgroundColor": "#003FFF",
+    "backgroundAlpha": 1,
+    "resolution": 1
+}

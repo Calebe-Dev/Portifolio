@@ -1,5 +1,3 @@
-// src/scripts/scripts.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const eraSelector = document.getElementById('era');
     const modeToggleButton = document.getElementById('mode-toggle-button');

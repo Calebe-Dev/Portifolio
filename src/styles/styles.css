@@ -86,7 +86,16 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+/**/
+  text-align: center; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
+
+/* .container { 
+  }*/
+
 
 nav {
     display: flex;
@@ -187,9 +196,11 @@ p {
 }
 
 .about-text {
+    text-align: justify;
     flex: 1 1 60%;
     margin-right: 40px;
     margin-bottom: 20px;
+    max-width: 700px;
 }
 
 .about-image {
@@ -202,6 +213,51 @@ p {
     height: auto;
     border-radius: 5px;
 }
+
+
+/*Conectse comigo*/
+/* Seção Conecte-se Comigo */
+#redes-sociais {
+    text-align: center; /* Centraliza o título e os links */
+    width: 100%; 
+    margin: 50px 0; /* Espaçamento superior e inferior da seção */
+  }
+  
+  #redes-sociais .social-container{
+      display:inline-block;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: column; /* Organiza os links em coluna */
+    align-items: center; /* Alinha os links ao centro horizontalmente */
+    gap: 15px; /* Espaçamento entre os links */
+  }
+  
+  .social-button {
+    display: flex; /* Permite alinhar ícone e texto lado a lado */
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    padding: 10px 15px;
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 20px; /* Cantos arredondados */
+    background-color: #333; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none; /* Remove a linha sob o texto */
+    transition: all 0.3s ease; /* Adiciona uma transição suave */
+  }
+  
+  .social-button:hover {
+    background-color: #ff0000; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho ao passar o mouse */
+  }
+  
+  .social-button img {
+    width: 24px; /* Tamanho do ícone */
+    height: 24px; 
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+  }
+
+
 
 /* Habilidades */
 .skills-container {
