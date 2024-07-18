@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Calebe Araujo - Web Designer & Desenvolvedor</title>
+    <meta name="description" content="Blog sobre web design, desenvolvimento web e tecnologia.">
+    <link rel="stylesheet" href="./src/styles/Blog.css"> 
+    <link rel="stylesheet" href="" id="theme-style"> </head>
+
+<body>
+    <header>
+        <div class="container">
+          <nav id="main-nav">
+            <button id="sidebar-toggle">Menu</button><a href="index.html" class="logo">Calebe Araujo</a> <ul> 
+                <li class="mode-toggle">
+                  <button id="mode-toggle-button">Alternar Tema</button>
+                </li>
+          </ul>
+          </nav>
+        </div>
+    </header>
+
+    <main id="blog-content">
+      <div class="container">
+        <aside class="sidebar">
+            <div class="search-bar container">
+                <input type="text" placeholder="Pesquisar posts...">
+              </div>
+            <h2>Posts</h2>
+            <ul class="posts-list">
+                <li><a href="#post1">Superando Limitações: Minha Jornada com um Macbook Pro 2009</a></li> 
+                </ul>
+        </aside>
+
+
+        <article class="post" id="post1">
+            <div class="post-header">
+                <h2>Superando Limitações: Minha Jornada com um Macbook Pro 2009</h2>
+                <p class="post-date">Publicado em: 26/10/2023</p>
+            </div>
+        
+            <section class="post-section active" id="section1">
+              <img src="macbook-pro-2009.jpg" alt="Imagem do Macbook Pro 2009"> 
+              <p>Olá, tudo bem? Gostaria de compartilhar com vocês uma experiência que tem sido ao mesmo tempo desafiadora e gratificante: utilizar um MacBook Pro 2009 como minha máquina principal. Comprei este laptop usado há alguns anos e ele se provou um verdadeiro guerreiro, mas as limitações começaram a se tornar cada vez mais evidentes com o passar do tempo. Aqui estão algumas das dificuldades que enfrentei e como as contornei, além dos reparos e upgrades necessários para manter o computador funcional.</p>
+        
+              <p>Para efeito de contextualização, esse Mac não recebe atualizações oficiais da Apple desde 2011 (Mac OS Lion), pois ele fez parte do início da migração de processadores PowerPC para Intel. Nesse período, a Apple utilizava placas de vídeo da NVIDIA em seus produtos. Em 2009, as placas de vídeo integradas a esses PCs possuíam pouca memória dedicada, o que as tornaria obsoletas para os padrões atuais. Em 2012, a Apple começou a migrar suas placas gráficas para AMD, utilizando a API Metal para aceleração gráfica, uma tecnologia compatível apenas com as placas de vídeo AMD. Isso é mais um motivo para considerarmos essa placa de vídeo obsoleta ao falarmos do sistema operacional macOS. Somado a isso seu processador, um core 2duo de primeira geração, que era um processador incrível para sua época mas que está indiscutivelmente defasado, tanto por falta de recursos, como por exemplo a capacidade de virtualização, a falta de cache L2/L3… podemos até estabelecer que esse processador estaria defasado já em 2012, onde um core i5 poderia performar com o dobro de sua velocidade e eficiência.</p> 
+        
+              <p>Patch de atualização da comunidade:</p>
+              <p>Quando comprei esse PC, ele ainda utilizava o MacOS-XLion, mas já era um sistema desatualizado há pelo menos 7 anos. Meu objetivo inicial era utilizá-lo de forma básica, para editar documentos, ver vídeos, ouvir músicas e não depender do meu smartphone da época o tempo todo. Para esse fim, eu acreditava que o MacOS Lion seria funcional. Entretanto, por ser um sistema obsoleto e inseguro, percebi que não era possível assistir a vídeos além dos DVDs da minha coleção, pois o navegador desatualizado não permitia acessar YouTube e Prime Video.</p>
+              <p>Pesquisei opções e fui levado a um mundo incrível: a comunidade de pessoas que dedicam seu tempo a tornar Macs antigos em computadores funcionais para os dias de hoje.</p> 
+            </section>
+        
+            <section class="post-section" id="section2">
+                <h3>MacOS Catalina Patch:</h3>
+                <p>Em um primeiro momento, fiz uso de um dos patches mais simples e fantásticos da época. Era fácil de configurar e instalar, e deu uma sobrevida incrível ao meu PC, permitindo até que eu utilizasse o GarageBand para produzir minhas músicas durante a pandemia, além de assistir a filmes e vídeos por streaming, servindo como uma forma eficaz de distração. No entanto, o sistema já apresentava limitações relacionadas à performance e compatibilidade com aplicativos. A edição de vídeo e foto, assim como os aplicativos de reprodução de arquivos de mídia nativos, não eram possíveis de utilizar, pois nada que precisasse da API Metal funcionava corretamente. Mesmo os aplicativos que não a exigiam, não funcionavam perfeitamente como em um MacBook atual. Embora o patch seja bom e ajude bastante, ele é apenas uma adaptação e vem com suas limitações.</p>
+        
+                <h3>OpenCore LegacyPatch:</h3>
+                <p>Com o passar dos anos, o MacOS Catalina também ficou defasado, perdendo suporte a inúmeros aplicativos, o que me trouxe a necessidade de migrar para o OpenCore Patch, que trouxe suporte a versões posteriores do macOS para o meu PC. Entretanto, a cada atualização, mais desempenho do processador era consumido, o que tornava a experiência do usuário geral para atividades simples, travada e ineficiente, em meu caso.</p>
+        
+                <p>Os patches são incríveis em seu objetivo de dar sobrevida a equipamentos ultrapassados. Acredito que, em PCs posteriores a 2012, a experiência com patches é superior de inúmeras maneiras. Obviamente, não será perfeita, contudo, a recomendo, especialmente para quem já possui um Mac que não recebe suporte a atualizações. No meu caso em específico, o uso de patches desse tipo e o trabalho que tive para aprender sobre como resolver problemas me ensinaram muito. Isso ficou claro durante meu segundo semestre na FATEC, especialmente na matéria de Sistemas Operacionais e no Laboratório de Hardware.</p>
+        
+                <p>Uma das peculiaridades do meu MacOs é o tipo de partição de boot, que é EFI. Com o patch, essa partição é adaptada para UEFI. A principal diferença entre EFI e UEFI é que a última é uma versão mais moderna e avançada, oferecendo uma melhor compatibilidade e suporte. Essa adaptação foi fundamental para melhorar o desempenho e a funcionalidade do meu Mac, permitindo que ele pudesse rodar versões mais recentes de forma mais eficaz. Pude entender melhor sua arquitetura e função, o que poderá ser muito útil no futuro; principalmente no estudo de sistemas operacionais e reparo em sistemas de forma geral.</p>
+            </section>
+        
+            <section class="post-section" id="section3">
+              <h3>Utilizando Linux no Macbook Pro 2009:</h3> 
+              <p>Como estudante da área de tecnologia com poucos recursos financeiros e muita criatividade, acredito que era inevitável o momento em que eu entraria no mundo Linux. Em um primeiro momento... (resto do seu texto) </p> 
+            </section>
+        
+            <nav class="post-navigation">
+              <div class="navigation-dots">
+                <span class="dot active" data-target="section1"></span> 
+                <span class="dot" data-target="section2"></span> 
+                <span class="dot" data-target="section3"></span> 
+              </div>
+            </nav>
+        </article>
+
+
+      </div>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <p>© 2023 Calebe Araujo</p> 
+        </div>
+    </footer>
+
+    <script src="./src/scripts/scripts.js"></script> </body>
+</html>
