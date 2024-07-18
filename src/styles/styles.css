@@ -220,7 +220,7 @@ p {
 #redes-sociais {
     text-align: center; /* Centraliza o título e os links */
     width: 100%; 
-    margin: 50px 0; /* Espaçamento superior e inferior da seção */
+    margin: 0, auto; /* Espaçamento superior e inferior da seção */
   }
   
   #redes-sociais .social-container{
