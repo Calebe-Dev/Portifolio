@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const postSections = document.querySelectorAll('.post-section');
     const sidebar = document.querySelector('.sidebar');
     const sidebarToggle = document.getElementById('sidebar-toggle');
+    const prevButton = document.getElementById('prev-button');
+    const nextButton = document.getElementById('next-button');
+
+
 
     const eraColors = {
         modern: '#111',
@@ -168,4 +172,50 @@ document.addEventListener('DOMContentLoaded', () => {
             sidebar.classList.toggle('hidden');
         });
     }
+
+    if (modeToggleButton) {
+        modeToggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    }
+
+    let currentSectionIndex = 0;
+
+    function showSection(index) {
+        postSections.forEach((section, i) => {
+            section.classList.toggle('active', i === index);
+            dots[i].classList.toggle('active', i === index);
+        });
+    }
+
+    if (dots.length > 0) {
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSectionIndex = index;
+                showSection(index);
+            });
+        });
+    }
+
+    if (prevButton) {
+        prevButton.addEventListener('click', () => {
+            if (currentSectionIndex > 0) {
+                currentSectionIndex -= 1;
+                showSection(currentSectionIndex);
+            }
+        });
+    }
+
+    if (nextButton) {
+        nextButton.addEventListener('click', () => {
+            if (currentSectionIndex < postSections.length - 1) {
+                currentSectionIndex += 1;
+                showSection(currentSectionIndex);
+            }
+        });
+    }
+
+    // Inicializa a primeira seção
+    showSection(currentSectionIndex);
 });
+
