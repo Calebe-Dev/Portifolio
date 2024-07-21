@@ -12,6 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+
+
+
+
+
+
+
     const eraColors = {
         modern: '#111',
         '2020s': '#cor-2020s',
@@ -217,5 +226,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Inicializa a primeira seção
     showSection(currentSectionIndex);
-});
 
+
+            // Função para abrir a janela de compartilhamento
+        function sharePost(platform, url, text) {
+            let shareUrl = '';
+            const encodedUrl = encodeURIComponent(url);
+            const encodedText = encodeURIComponent(text);
+
+            switch(platform) {
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedText}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+                    break;
+                case 'linkedin':
+                    shareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+                    break;
+            }
+
+            window.open(shareUrl, '_blank', 'width=600,height=400');
+        }
+
+        // Adiciona eventos aos botões de compartilhamento
+        document.querySelectorAll('.share-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const platform = button.getAttribute('data-platform');
+                const post = button.closest('.post');
+                const postTitle = post.querySelector('.post-header h2').innerText;
+                const postUrl = window.location.href + '#' + post.id;
+                sharePost(platform, postUrl, postTitle);
+            });
+        });
+});

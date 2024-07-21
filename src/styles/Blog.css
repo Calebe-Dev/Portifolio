@@ -357,3 +357,24 @@ body.light-mode .search-bar input {
     color: #111;
     border: 1px solid #ccc;
 }
+
+/* Estilos para os botões de compartilhamento */
+.share-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.share-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.share-btn:hover {
+    background-color: #555;
+}
