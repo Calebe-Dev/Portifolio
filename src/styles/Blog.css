@@ -334,18 +334,19 @@ body.light-mode {
 }
 
 body.light-mode .sidebar {
-    background-color: rgba(18, 18, 18, 0.8);
+    background-color: rgba(240, 240, 240, 0.8);
     backdrop-filter: blur(9px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Mantendo apenas uma regra de box-shadow */   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
     color: #111;
 }
 
 body.light-mode .post {
-    background-color: #fff;
+    background-color: #f8f8f8;
     color: #111;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-body.light-mode .post a {`
+body.light-mode .post a {
     color: #111;
 }
 
@@ -354,9 +355,33 @@ body.light-mode .post a:hover {
 }
 
 body.light-mode .search-bar input {
+    background-color: #f8f8f8;
     color: #111;
     border: 1px solid #ccc;
 }
+
+body.light-mode .share-btn {
+    background-color: #444;
+    color: #fff;
+}
+
+body.light-mode .share-btn:hover {
+    background-color: #666;
+}
+
+body.light-mode .credits {
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .credits a {
+    color: #444;
+}
+
+body.light-mode .credits a:hover {
+    color: #ff0000;
+}
+
 
 /* Estilos para os botões de compartilhamento */
 .share-buttons {
@@ -412,4 +437,79 @@ body.light-mode .search-bar input {
 
 .credits a:hover {
     color: #ff0000;
+}
+
+/* Responsividade (Exemplo para telas menores) */
+@media (max-width: 768px) {
+    #blog-content {
+        flex-direction: column; 
+        padding-top: 10%;
+        max-width: 100%;
+    }
+
+    .sidebar, 
+    .posts-area {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sidebar {
+        position: static;
+        height: auto;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    #main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-nav li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        padding: 10% 0;
+    }
+
+    .search-bar input {
+        max-width: 100%;
+    }
+
+    .post {
+        margin-bottom: 20px;
+    }
+
+    .post img {
+        width: 100%;
+    }
+
+    .share-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .share-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsividade (Exemplo para tablets) */
+@media (max-width: 1024px) {
+    #blog-content {
+        padding-top: 8%;
+    }
+
+    .sidebar {
+        width: 25%;
+    }
+
+    .posts-area {
+        width: 75%;
+    }
 }
