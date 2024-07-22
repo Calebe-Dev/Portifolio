@@ -63,7 +63,10 @@ header {
     color: #ff0000; 
 }
   
+
+/*Rever funcionamento do tema claro*/
 .mode-toggle button { 
+    display: none;
     background-color: transparent; 
     color: #fff; 
     border: none;
@@ -319,10 +322,19 @@ footer {
         flex-direction: column; 
     }
   
-    .sidebar, 
+    .sidebar{
+        width: auto;
+        height: auto;
+        margin-left: 0%;
+    }
+
     .posts-area {
         width: 100%;
         margin-left: 0;
+    }
+
+    #sidebar-toggle {
+        display: none;
     }
 }
 
