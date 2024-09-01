@@ -13,14 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
-
-
-
-
     const eraColors = {
         modern: '#111',
         '2020s': '#cor-2020s',
