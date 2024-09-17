@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramenta de Teste de Cores CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .color-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .color-preview {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            margin-left: 10px;
+        }
+        .color-input, .name-input {
+            padding: 5px;
+            margin-right: 5px;
+        }
+        .remove-button {
+            margin-left: 10px;
+            background-color: #ff6666;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            color: white;
+        }
+        #color-tester {
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #background-section {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ferramenta de Teste de Cores CSS</h1>
+
+    <div id="background-section">
+        <label for="background-color-input">Cor do fundo:</label>
+        <input type="text" id="background-color-input" placeholder="Digite o código da cor" oninput="updateBackgroundColor()">
+    </div>
+
+    <div id="color-tester">
+        <!-- Primeira entrada de cor -->
+        <div class="color-container">
+            <input type="text" class="name-input" placeholder="Nome da cor">
+            <input type="text" class="color-input" placeholder="Digite o código da cor" oninput="updateColor(this)">
+            <div class="color-preview"></div>
+            <button class="remove-button" onclick="removeColorField(this)">Remover</button>
+        </div>
+    </div>
+
+    <button onclick="addColorField()">Adicionar mais cores</button>
+    <button onclick="saveColors()">Salvar cores</button>
+
+    <script>
+        // Função para atualizar o fundo da página
+        function updateBackgroundColor() {
+            const color = document.getElementById('background-color-input').value;
+
+            // Validação simples para hex ou rgb
+            if (/^#([0-9A-F]{3}){1,2}$/i.test(color) || /^rgb\((\d{1,3}), (\d{1,3}), (\d{1,3})\)$/i.test(color)) {
+                document.body.style.backgroundColor = color;
+            }
+        }
+
+        // Função para atualizar a cor do quadrado
+        function updateColor(input) {
+            const color = input.value;
+            const preview = input.nextElementSibling;
+
+            // Validação simples para hex ou rgb
+            if (/^#([0-9A-F]{3}){1,2}$/i.test(color) || /^rgb\((\d{1,3}), (\d{1,3}), (\d{1,3})\)$/i.test(color)) {
+                preview.style.backgroundColor = color;
+            } else {
+                preview.style.backgroundColor = 'transparent'; // Se inválido, deixa transparente
+            }
+        }
+
+        // Função para adicionar mais campos de teste de cores
+        function addColorField() {
+            const tester = document.getElementById('color-tester');
+            const newField = document.createElement('div');
+            newField.className = 'color-container';
+            newField.innerHTML = `
+                <input type="text" class="name-input" placeholder="Nome da cor">
+                <input type="text" class="color-input" placeholder="Digite o código da cor" oninput="updateColor(this)">
+                <div class="color-preview"></div>
+                <button class="remove-button" onclick="removeColorField(this)">Remover</button>
+            `;
+            tester.appendChild(newField);
+        }
+
+        // Função para remover um campo de teste de cores
+        function removeColorField(button) {
+            const field = button.parentElement;
+            field.remove();
+        }
+
+        // Função para salvar as cores testadas em um arquivo txt com nome e código
+        function saveColors() {
+            const colorContainers = document.querySelectorAll('.color-container');
+            let colors = [];
+            colorContainers.forEach(container => {
+                const nameInput = container.querySelector('.name-input');
+                const colorInput = container.querySelector('.color-input');
+                if (nameInput.value && colorInput.value) {
+                    colors.push(`${nameInput.value}: ${colorInput.value}`);
+                }
+            });
+
+            if (colors.length === 0) {
+                alert("Nenhuma cor foi inserida!");
+                return;
+            }
+
+            const blob = new Blob([colors.join('\n')], { type: 'text/plain' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'cores_testadas.txt';
+            link.click();
+        }
+    </script>
+</body>
+</html>
