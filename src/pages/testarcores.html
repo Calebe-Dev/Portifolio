@@ -40,7 +40,7 @@
             font-size: 16px;
             cursor: pointer;
         }
-        #background-section {
+        #background-section, #font-section {
             margin-top: 20px;
         }
     </style>
@@ -48,9 +48,16 @@
 <body>
     <h1>Ferramenta de Teste de Cores CSS</h1>
 
+    <!-- Seção para alterar a cor do fundo -->
     <div id="background-section">
         <label for="background-color-input">Cor do fundo:</label>
         <input type="text" id="background-color-input" placeholder="Digite o código da cor" oninput="updateBackgroundColor()">
+    </div>
+
+    <!-- Seção para alterar a cor da fonte -->
+    <div id="font-section">
+        <label for="font-color-input">Cor da fonte:</label>
+        <input type="text" id="font-color-input" placeholder="Digite o código da cor" oninput="updateFontColor()">
     </div>
 
     <div id="color-tester">
@@ -70,20 +77,41 @@
         // Função para atualizar o fundo da página
         function updateBackgroundColor() {
             const color = document.getElementById('background-color-input').value;
-
-            // Validação simples para hex ou rgb
-            if (/^#([0-9A-F]{3}){1,2}$/i.test(color) || /^rgb\((\d{1,3}), (\d{1,3}), (\d{1,3})\)$/i.test(color)) {
+            if (isValidColor(color)) {
                 document.body.style.backgroundColor = color;
             }
         }
 
+        // Função para atualizar a cor das fontes
+        function updateFontColor() {
+            const color = document.getElementById('font-color-input').value;
+            if (isValidColor(color)) {
+                document.body.style.color = color;
+            }
+        }
+
+        // Validação de cor (hex, rgb, rgba, hsl)
+        function isValidColor(color) {
+            return /^#([0-9A-F]{3}){1,2}$/i.test(color) || 
+                   /^rgb\((\d{1,3}), (\d{1,3}), (\d{1,3})\)$/i.test(color) ||
+                   /^rgba\((\d{1,3}), (\d{1,3}), (\d{1,3}), (0|1|0?\.\d+)\)$/i.test(color) ||
+                   /^hsl\(\d{1,3},\s*([0-9]{1,3})%,\s*([0-9]{1,3})%\)$/i.test(color);
+        }
+
         // Função para atualizar a cor do quadrado
         function updateColor(input) {
-            const color = input.value;
+            let color = input.value;
+
+            // Adiciona o # caso seja um código hex sem o #
+            if (/^[0-9A-F]{3,6}$/i.test(color)) {
+                color = '#' + color;
+                input.value = color;
+            }
+
             const preview = input.nextElementSibling;
 
-            // Validação simples para hex ou rgb
-            if (/^#([0-9A-F]{3}){1,2}$/i.test(color) || /^rgb\((\d{1,3}), (\d{1,3}), (\d{1,3})\)$/i.test(color)) {
+            // Verifica se a cor é válida e aplica
+            if (isValidColor(color)) {
                 preview.style.backgroundColor = color;
             } else {
                 preview.style.backgroundColor = 'transparent'; // Se inválido, deixa transparente
@@ -114,16 +142,31 @@
         function saveColors() {
             const colorContainers = document.querySelectorAll('.color-container');
             let colors = [];
+            let colorNames = new Set(); // Para garantir que os nomes não sejam duplicados
+
             colorContainers.forEach(container => {
                 const nameInput = container.querySelector('.name-input');
                 const colorInput = container.querySelector('.color-input');
-                if (nameInput.value && colorInput.value) {
+
+                if (!nameInput.value) {
+                    alert("Por favor, insira um nome para todas as cores.");
+                    return;
+                }
+
+                if (colorNames.has(nameInput.value)) {
+                    alert(`O nome "${nameInput.value}" já está em uso. Por favor, escolha um nome diferente.`);
+                    return;
+                }
+
+                colorNames.add(nameInput.value);
+
+                if (isValidColor(colorInput.value)) {
                     colors.push(`${nameInput.value}: ${colorInput.value}`);
                 }
             });
 
             if (colors.length === 0) {
-                alert("Nenhuma cor foi inserida!");
+                alert("Nenhuma cor válida foi inserida!");
                 return;
             }
 
