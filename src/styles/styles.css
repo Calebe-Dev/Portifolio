@@ -40,6 +40,9 @@ body {
     color: #fff;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 /* Estilo para o seletor de eras */
 #era {
